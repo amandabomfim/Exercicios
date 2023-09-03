@@ -1,18 +1,19 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Cabecalho (){
+export default function Cabecalho(){
+
     return(
         <>
-            <header>
-                <nav>
-                    <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/aparelhos">Aparelhos</a></li>
-                    </ul>
-                </nav>
+            <header className="cabecalho">
                 <h1>Loja de Smartphones e Tablets</h1>
-        
+                <ul>
+                    <li><Link to="/">HOME</Link></li>
+                    <li><Link to="/produtos">PRODUTOS</Link></li>
+                    
+                </ul>
+    
             </header>
+
         </>
     )
 }
