@@ -23,12 +23,9 @@ export default function VisualizarProdutos() {
     <>
         <div>
             <h1>VISUALIZAR PRODUTO</h1>
-              <fieldset>
-
                 <div>
                   <button >COMPRAR</button>
                 </div>
-              </fieldset>
         </div>
     </>
   )

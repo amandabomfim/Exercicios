@@ -3,16 +3,28 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
+
+h1 {
+  margin-right: 20px;
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+.cabecalho ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.cabecalho li {
+  display: inline;
+  margin-right: 10px; 
+}
+
+.cabecalho li a {
+  font-size: 1.2em; 
+  
+}
+
 
 a {
   font-weight: 500;
@@ -20,21 +32,25 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #000;
+  background-color: #646cff;
+  
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.promocoes{
+  overflow: auto;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.promocoes div {
+  float: left; 
+  width: 45%; 
+  box-sizing: border-box; 
+  margin-right: 10px;
+  border: 1px solid #ccc; 
+  padding: 10px; 
 }
+
+
 
 button {
   border-radius: 8px;
@@ -43,27 +59,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #646cff;
   cursor: pointer;
   transition: border-color 0.25s;
+  border-color: #000;
 }
 button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: #fff;
+  border-color: #000;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+

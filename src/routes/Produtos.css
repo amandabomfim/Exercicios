@@ -1,7 +1,7 @@
-.tabelaProd{
+.tabela{
     border-collapse: collapse;
 }
 
-.tabelaProd tr,td{
+.tabela tr,td{
     border: solid 2px #000000;
 }
