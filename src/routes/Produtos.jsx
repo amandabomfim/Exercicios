@@ -5,17 +5,12 @@ import "./Produtos.css";
 
 export default function Produtos() {
 
-    const estiloImg = {
-        width: "100px",
-        height: "100px",
-    }
-
   return (
     <>
         <div>
             <h1>PRODUTOS</h1>
 
-            <table className="tabelaProd">
+            <table className="tabela">
                 <tr>
                     <th>ID</th>
                     <th>NOME</th>
