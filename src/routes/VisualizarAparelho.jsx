@@ -6,7 +6,6 @@ export default function VisualizarAparelho() {
 
   const { id } = useParams();
 
-  // Utilizando o find na Lista de Aparelhos para encontrar o aparelho pelo id.
   const aparelhoEncontrado = ListaAparelhos.find((aparelho) => aparelho.id === parseInt(id));
 
   return (
