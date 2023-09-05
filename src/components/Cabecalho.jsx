@@ -8,7 +8,7 @@ export default function Cabecalho(){
                 <h1>Loja de Smartphones e Tablets</h1>
                 <ul>
                     <li><Link to="/">HOME</Link></li>
-                    <li><Link to="/produtos">PRODUTOS</Link></li>
+                    <li><Link to="/aparelhos">APARELHOS</Link></li>
                     
                 </ul>
     

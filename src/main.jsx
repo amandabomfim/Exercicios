@@ -6,8 +6,8 @@ import './index.css'
 //Bloco de criação das rotas
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/Home.jsx';
-import Produtos from './routes/Produtos.jsx';
-import VisualizarProduto from './routes/VisualizarProduto.jsx';
+import Aparelhos from './routes/Aparelhos.jsx';
+import VisualizarAparelho from './routes/VisualizarAparelho.jsx';
 import Error from './routes/Error.jsx';
 
 const router = createBrowserRouter(
@@ -16,8 +16,8 @@ const router = createBrowserRouter(
     errorElement: <Error/>,
     children:[
         { path: '/', element : <Home/>},
-        { path: '/produtos', element : <Produtos/>},
-        { path: '/visualizar/produto/:id', element : <VisualizarProduto/>},
+        { path: '/aparelhos', element : <Aparelhos/>},
+        { path: '/visualizar/aparelho/:id', element : <VisualizarAparelho/>},
       ]
   }
  ]

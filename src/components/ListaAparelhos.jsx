@@ -1,4 +1,4 @@
-export const ListaProdutos = [
+export const ListaAparelhos = [
     {id:1, nome: 'Samsung Galaxy S23', preco: 3704,},
     {id:2, nome: 'Smartphone Xiaomi Redmi Note 12', preco: 1727},
     {id:3, nome: 'Apple iPhone 14', preco: 12221},

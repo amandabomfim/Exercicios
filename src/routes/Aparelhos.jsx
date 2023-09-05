@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { ListaProdutos } from "../components/ListaProdutos";
+import { ListaAparelhos} from "../components/ListaAparelhos";
 import {AiOutlineEdit as Editar, AiOutlineDelete as Excluir} from "react-icons/ai";
-import "./Produtos.css";
+import "./Aparelhos.css";
 
-export default function Produtos() {
+export default function Aparelhos() {
 
   return (
     <>
         <div>
-            <h1>PRODUTOS</h1>
+            <h1>APARELHOS</h1>
 
             <table className="tabela">
                 <tr>
@@ -19,12 +19,12 @@ export default function Produtos() {
 
                 </tr>
             
-                {ListaProdutos.map( (produto, indice)=>(
+                {ListaAparelhos.map( (aparelho, indice)=>(
                         <tr key={indice}>
-                            <td>{produto.id}</td>
-                            <td>{produto.nome}</td>
-                            <td>{produto.preco}</td>
-                            <td> <Link to={`/visualizar/produto/${produto.id}`}>Visualizar</Link></td>
+                            <td>{aparelho.id}</td>
+                            <td>{aparelho.nome}</td>
+                            <td>{aparelho.preco}</td>
+                            <td> <Link to={`/visualizar/aparelho/${aparelho.id}`}>Visualizar</Link></td>
                         </tr>
                 ))}
             </table>
